@@ -5,14 +5,20 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: antiquewhite;
+    color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
+    flex-wrap: wrap;
+    justify-self: top;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: brown;
+    color: black;
+    text-align: center;
 }
 
 .header h1 {
@@ -20,181 +26,173 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+.nav {
+    margin-top: 20px;
+    word-spacing: 3px;
+    justify-self: center;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+.name {
+    font-weight: bold;
+    color:antiquewhite;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+a[href*="#"] {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: black;
+}
+
+.intro {
+    margin: 20px;
+    padding: 20px;
+    background-color: #cd5c5c;
+}
+
+#moose {
+    display: flex;
+    float: left;
+    margin: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    height: 300px;
+    width: 500px;
+}
+
+.intro p {
+    float: center;
+    margin: 75px;
+    font-size: 25px;
 }
 
 p {
-    font-size: 16px;
+    float: center;
+    margin: 75px;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+h2 {
+    justify-self: left;
+    text-align: left;
+    color: antiquewhite;
+    font-size: 45px;
+    padding-top: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
-.float-left {
+.cards {
+    margin: 20px;
+    height: 350px;
+}
+
+#why-site {
+    background-color: #f08080;
+}
+
+#why-us {
+    background-color: #ffa07a;
+}
+
+#social-media-marketing {
+    background-color: #e9967a;
+}
+
+.cards img {
     float: left;
-    margin-right: 25px;
+    margin: 20px;
+    margin-right: 50px;
+    height: 300px;
+    width: 300px;
 }
 
-.float-right {
+#why-site img, #social-media-marketing img {
     float: right;
-    margin-left: 25px;
+    margin-left: 35px;
+    margin-right: 50px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.benefits {
-    margin-right: 20px;
+.quotes {
+    font-size: 30px;
+    color: darkslategray;
+    margin: 20px;
+    height: 400px;
+    background-color: #cc6666;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.quote1, .quote2, .quote3 {
+    float: left;
+    margin: 10px;
+    margin-top: 10px;
     padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: antiquewhite;
+    list-style-type: none;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+#quotes h2 {
+    color: darkslategrey;
+    float: center;
+    margin-left: 30px;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
+#contactus {
+    float: center;
+    background-color: #e34234;
+    height: 150px;
+    margin: 20px;
+    padding-top: 10px;
+    padding-left: 360px;
+    padding-right: 360px;
     text-align: center;
+    font-size: 10px
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
+.contact p {
+    font-size: 20px;
+}
+
+.contact h3 {
     text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
+    color: antiquewhite;
+    padding: 15px;
 }
 
 .footer {
-    padding: 30px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 325px;
+    padding-right: 325px;
+    padding-top: 30px;
+    padding-bottom: 5px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-color: brown;
 }
 
-.footer h2 {
+.footer p {
     font-size: 20px;
+}
+
+.footer h3 {
+    font-size: 30px;
 }
